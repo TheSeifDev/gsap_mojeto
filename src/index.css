@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* ✅ خط Modern Negra */
+@font-face {
+  font-family: "Modern Negra";
+  src: url("/fonts/Modern-Negra-Demo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ✅ ثيم للألوان والخطوط */
+@theme {
+  --color-yellow: #e7d393;
+  --color-white-100: #efefef;
+  --font-sans: "Mona Sans", sans-serif;
+  --font-modern-negra: "Modern Negra", sans-serif;
+  --font-serif: "DM Serif Text", serif;
+}
+
+html,
+body {
+  width: 100%;
+  background: black;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* ✅ Utilities */
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility col-center {
+  @apply flex flex-col justify-center items-center;
+}
+
+@utility abs-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+/* 🎨 Text Gradient Utility */
+@utility text-gradient {
+  background: linear-gradient(to bottom, #ffffff, #898989);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 🌌 Radial Gradient Utility */
+@utility radial-gradient {
+  background: radial-gradient(
+    circle at center,
+    #434343 0%,
+    #000 50%,
+    transparent 100%
+  );
+}
+
+/* 🖼️ Masked Image Utility */
+@utility masked-img {
+  -webkit-mask-image: url("/images/mask-img.png");
+  mask-image: url("/images/mask-img.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 50%;
+  mask-size: 50%;
+}
+
+/* ✅ Components Layer */
+@layer components {
+  main {
+    @apply w-full overflow-x-hidden;
+  }
+
+  nav {
+    @apply fixed z-50 w-full;
+
+    div {
+      @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container;
+    }
+
+    p {
+      @apply font-modern-negra text-3xl -mb-2;
+    }
+
+    a {
+      /* 🚨 كان عندك مشكلة هنا: cursor-pointertext-nowrap → لازم مسافة */
+      @apply cursor-pointer text-nowrap md:text-base text-sm;
+    }
+
+    ul {
+      @apply flex-center lg:gap-12 gap-7;
+    }
+  }
+
+  .noisy {
+    @apply absolute inset-0 w-full h-full bg-[url('/images/noise.png')];
+  }
+
+  #hero {
+    @apply relative z-10 min-h-dvh w-full border border-transparent;
+
+    h1 {
+      @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
+    }
+
+    .left-leaf {
+      @apply absolute left-0 md:top-20 xl:top-36 2xl:top-52 md:bottom-auto -bottom-20 md:w-fit w-1/3;
+    }
+  }
+}
