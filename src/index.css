@@ -24,10 +24,12 @@ body {
   overflow-x: hidden;
 }
 
-.noselect {
-  user-select: none;
+* {
   -webkit-user-drag: none;
+  user-select: none;
 }
+
+
 
 @utility flex-center {
   @apply flex justify-center items-center;
