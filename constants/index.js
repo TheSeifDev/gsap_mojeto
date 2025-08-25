@@ -1,6 +1,6 @@
 const navLinks = [
   {
-    id: "smoothies",
+    id: "cocktails",
     title: "Smoothies",
   },
   {
@@ -17,60 +17,19 @@ const navLinks = [
   },
 ];
 
-const cocktailLists = [
-  {
-    name: "Chapel Hill Shiraz",
-    country: "AU",
-    detail: "Battle",
-    price: "$10",
-  },
-  {
-    name: "Caten Malbee",
-    country: "AU",
-    detail: "Battle",
-    price: "$49",
-  },
-  {
-    name: "Rhino Pale Ale",
-    country: "CA",
-    detail: "750 ml",
-    price: "$20",
-  },
-  {
-    name: "Irish Guinness",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
-  },
+const smoothieLists = [
+  { name: "Mango Sunshine", country: "EG", detail: "350 ml", price: "$10" },
+  { name: "Berry Fusion", country: "US", detail: "500 ml", price: "$15" },
+  { name: "Tropical Twist", country: "BR", detail: "400 ml", price: "$12" },
+  { name: "Minty Fresh", country: "MA", detail: "350 ml", price: "$11" },
 ];
 
 const mockTailLists = [
-  {
-    name: "Tropical Bloom",
-    country: "US",
-    detail: "Battle",
-    price: "$10",
-  },
-  {
-    name: "Passionfruit Mint",
-    country: "US",
-    detail: "Battle",
-    price: "$49",
-  },
-  {
-    name: "Citrus Glow",
-    country: "CA",
-    detail: "750 ml",
-    price: "$20",
-  },
-  {
-    name: "Lavender Fizz",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
-  },
+  { name: "Tropical Bloom", country: "US", detail: "350 ml", price: "$10" },
+  { name: "Passionfruit Mint", country: "US", detail: "500 ml", price: "$14" },
+  { name: "Citrus Glow", country: "CA", detail: "400 ml", price: "$13" },
+  { name: "Lavender Fizz", country: "FR", detail: "350 ml", price: "$12" },
 ];
-
 const profileLists = [
   {
     imgPath: "/images/profile1.png",
@@ -88,24 +47,24 @@ const profileLists = [
 
 const featureLists = [
   "Perfectly balanced blends",
-  "Garnished to perfection",
-  "Ice-cold every time",
-  "Expertly shaken & stirred",
+  "Fresh fruits, handpicked daily",
+  "Chilled & refreshing always",
+  "Unique flavors crafted with care",
 ];
 
 const goodLists = [
-  "Handpicked ingredients",
-  "Signature techniques",
-  "Bartending artistry in action",
-  "Freshly muddled flavors",
+  "100% natural ingredients",
+  "Signature smoothie recipes",
+  "Freshly blended to order",
+  "Healthy & energizing choices",
 ];
 
 const storeInfo = {
   heading: "Where to Find Us",
-  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+  address: "000, Raq Blvd. #404, LAs Vegas, CA 12345",
   contact: {
-    phone: "(555) 987-6543",
-    email: "hello@jsmcocktail.com",
+    phone: "(000) 000-000",
+    email: "hello@smoothie.com",
   },
 };
 
@@ -137,41 +96,41 @@ const socials = [
 const allSmoothies = [
   {
     id: 1,
-    name: "Classic Mojito",
+    name: "Classic Strawberry",
     image: "/images/drink1.png",
-    title: "Simple Ingredients, Bold Flavor",
+    title: "Simple & Refreshing",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "Fresh strawberries blended with ice and a hint of sweetness. A timeless favorite for everyone.",
   },
   {
     id: 2,
-    name: "Raspberry Mojito",
+    name: "Raspberry Delight",
     image: "/images/drink2.png",
-    title: "A Zesty Classic That Never Fails",
+    title: "Berry Good Vibes",
     description:
-      "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+      "A tangy, refreshing mix of raspberries and mint, perfect for summer days and chill nights.",
   },
   {
     id: 3,
     name: "Violet Breeze",
     image: "/images/drink3.png",
-    title: "Simple Ingredients, Bold Flavor",
+    title: "Smooth & Unique",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "A floral-inspired smoothie with fresh berries, violet essence, and a cool finish.",
   },
   {
     id: 4,
-    name: "Curacao Mojito",
+    name: "Curacao Splash",
     image: "/images/drink4.png",
-    title: "Crafted With Care, Poured With Love",
+    title: "Tropical Paradise",
     description:
-      "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+      "A colorful blend of tropical fruits and citrus for that ultimate island escape in a glass.",
   },
 ];
 
 export {
   navLinks,
-  cocktailLists,
+  smoothieLists,
   mockTailLists,
   profileLists,
   featureLists,
