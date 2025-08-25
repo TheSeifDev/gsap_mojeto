@@ -123,7 +123,7 @@ const Hero = () => {
                 you.
               </p>
               <hr />
-              <a href="#smoothies" className="View flex items-center gap-2">
+              <a href="#cocktails" className="View flex items-center gap-2">
                 <span>
                   View Smoothies
                 </span>
