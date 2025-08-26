@@ -29,6 +29,10 @@ body {
   user-select: none;
 }
 
+#menu {
+  overflow-x: hidden;
+}
+
 
 
 @utility flex-center {

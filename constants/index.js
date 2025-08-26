@@ -93,38 +93,38 @@ const socials = [
   },
 ];
 
-const allSmoothies = [
+const allCocktails = [
   {
     id: 1,
-    name: "Classic Strawberry",
+    name: "Classic Mango",
     image: "/images/drink1.png",
-    title: "Simple & Refreshing",
+    title: "Sweet & Sunny",
     description:
-      "Fresh strawberries blended with ice and a hint of sweetness. A timeless favorite for everyone.",
+      "Ripe mangoes blended to perfection, delivering a tropical burst of sweetness in every sip.",
   },
   {
     id: 2,
-    name: "Raspberry Delight",
+    name: "Chocolate Bliss",
     image: "/images/drink2.png",
-    title: "Berry Good Vibes",
+    title: "Rich & Creamy",
     description:
-      "A tangy, refreshing mix of raspberries and mint, perfect for summer days and chill nights.",
+      "A smooth and indulgent chocolate drink, crafted for all the cocoa lovers out there.",
   },
   {
     id: 3,
-    name: "Violet Breeze",
+    name: "Vanilla Dream",
     image: "/images/drink3.png",
-    title: "Smooth & Unique",
+    title: "Classic & Smooth",
     description:
-      "A floral-inspired smoothie with fresh berries, violet essence, and a cool finish.",
+      "A timeless vanilla blend with a silky texture and a touch of sweetness for pure comfort.",
   },
   {
     id: 4,
-    name: "Curacao Splash",
+    name: "Watermelon Splash",
     image: "/images/drink4.png",
-    title: "Tropical Paradise",
+    title: "Fresh & Juicy",
     description:
-      "A colorful blend of tropical fruits and citrus for that ultimate island escape in a glass.",
+      "Crisp watermelon served icy-cold, the ultimate thirst-quencher for hot sunny days.",
   },
 ];
 
@@ -138,5 +138,5 @@ export {
   openingHours,
   storeInfo,
   socials,
-  allSmoothies,
+  allCocktails,
 };
